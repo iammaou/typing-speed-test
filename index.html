@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Typing Speed Test</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+    </style>
+  </head>
+  <body class="sora-400">
+    <header>
+      <img src="./assets/images/logo-large.svg" alt="large site logo" />
+      <div>
+        <img
+          src="./assets/images/icon-personal-best.svg"
+          alt="personal best icon"
+        />
+        <h4>Personal best:</h4>
+        <h4><span class="main__pb">0</span>WPM</h4>
+      </div>
+    </header>
+    <div class="main">
+      <nav>
+        <div class="main__nav-stats">
+          <div>
+            <h4>WPM:</h4>
+            <h4 class="main__nav-stats_WPM">0</h4>
+          </div>
+          <div>
+            <h4>Accuracy:</h4>
+            <h4 class="red"><span class="main__nav-stats_ACC">100</span>%</h4>
+          </div>
+          <div>
+            <h4>Time:</h4>
+            <h4 class="yellow">
+              0:<span class="main__nav-stats_TIME">5</span>
+            </h4>
+          </div>
+        </div>
+        <div class="main__nav-settings">
+          <div>
+            <h4>Difficulty:</h4>
+            <button id="main__nav-settings_btn-active" class="easyButton">
+              Easy
+            </button>
+            <button class="meduimButton">Medium</button>
+            <button class="hardButton">Hard</button>
+          </div>
+          <div>
+            <h4>Mode:</h4>
+            <button id="main__nav-settings_btn-active">Timed(60s)</button>
+            <button>Passage</button>
+          </div>
+        </div>
+      </nav>
+      <hr />
+      <div class="main__passage">
+        <!-- Passage -->
+        <div class="main__passage-start">
+          <button>Start Typing Test</button>
+          <h5>Or click the text and start typing</h5>
+        </div>
+      </div>
+
+      <hr id="hidden" class="hiddenHr" />
+    </div>
+
+    <div class="main__test-complete" id="hidden">
+      <!-- Test Complete Start -->
+      <div class="main__test-complete_div">
+        <div class="main__test-complete_div-div">
+          <img src="./assets/images/icon-completed.svg" alt="completed icon" />
+        </div>
+      </div>
+
+      <div class="main__test-complete_pb" id="hidden">
+        <img
+          src="./assets/images/icon-new-pb.svg"
+          alt="icon new personal best"
+        />
+      </div>
+
+      <div class="main__test-complete_text-baseline">
+        <h2>Baseline Established!</h2>
+        <h5>
+          You've set the bar. Now the real challenge begins-time to beat it.
+        </h5>
+      </div>
+      <div id="hidden" class="main__test-complete_text-classic">
+        <h2>Test Complete! Solid run.</h2>
+        <h5>Keep pushing to beat your high score.</h5>
+      </div>
+      <div id="hidden" class="main__test-complete_text-pb">
+        <h2>High Score Smashed!</h2>
+        <h5>You're getting faster, That was incredible typing.</h5>
+      </div>
+
+      <div class="main__test-complete_stats">
+        <div>
+          <h7>WPM:</h7>
+          <h6 class="main__test-complete_stats-WPM">65</h6>
+        </div>
+        <div>
+          <h7>Accuracy:</h7>
+          <h6 style="color: var(--red-500)">
+            <span class="main__test-complete_stats-ACC">100</span>%
+          </h6>
+        </div>
+        <div>
+          <h7>Characters:</h7>
+          <h6>
+            <span
+              style="color: var(--green-500)"
+              class="main__test-complete_stats-correct"
+              >65</span
+            >/<span
+              style="color: var(--red-500)"
+              class="main__test-complete_stats-incorrect"
+              >6</span
+            >
+          </h6>
+        </div>
+        <button class="main__test-complete_stats-resetButton">
+          <h4 class="main__test-complete_stats-button_baseline">
+            Beat This Score
+          </h4>
+          <h4 id="hidden" class="main__test-complete_stats-button_classic">
+            Go Again
+          </h4>
+          <img src="./assets/images/icon-restart.svg" />
+        </button>
+      </div>
+
+      <img
+        src="./assets/images/pattern-confetti.svg"
+        alt="confetti pattern"
+        style="width: 100%"
+        id="hidden"
+        class="main__test-complete_confetti"
+      />
+      <!-- Test Complete End -->
+    </div>
+
+    <footer>
+      <p>Challenge by</p>
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      <p>Coded by <a href="#">Your Name Here</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
