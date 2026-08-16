@@ -41,7 +41,7 @@ Because this project is built with standard web technologies, no build tools or 
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/iammaou/typing-speed-test.git
    cd typing-speed-test
    ``` 
 
